@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      #nav {
+        display: flex;
+        border: 0px solid;
+        width: 100%;
+        margin: auto;
+        padding: 30px;
+        background-color: rgb(240, 240, 240);
+        gap: 0px;
+      }
+      #city {
+        width: 400px;
+        height: 30px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: none;
+        font-size: 16px;
+        padding-left: 10px;
+      }
+      input[type="submit"] {
+        width: 100px;
+        height: 32px;
+        margin-right: 500px;
+        border: none;
+        text-align: center;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: grey;
+        font-size: 16px;
+      }
+      #weather {
+        margin-right: 200px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: lightgray;
+        cursor: pointer;
+      }
+      #weather:hover {
+        background-color: white;
+        border: none;
+      }
+      .fa {
+        border: 0px solid;
+        width: 50px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      #container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        line-height: 10px;
+        margin-left: 100px;
+      }
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 200px;
+        border: 0px solid red;
+        width: 500px;
+        border: none;
+      }
+      .mapouter {
+        height: 200px;
+        width: 500px;
+        margin-right: 50px;
+        border: none;
+        margin-top: 20px;
+      }
+      iframe {
+        width: 500px;
+        margin: auto;
+        overflow: hidden;
+        background: none !important;
+        height: 200px;
+        position: absolute;
+        border: none;
+      }
+      #parent {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+      }
+      #container {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <input type="" placeholder="Search city" id="city" />
+      <input type="submit" value="Search" onclick="getwheather()" />
+      <i class="fa fa-location-arrow"></i>
+      <input type="text" placeholder="Different Weather?" id="weather" />
+    </div>
+    <div id="parent">
+      <div id="container"></div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas"> </iframe
+          ><a href="https://123movies-to.org"></a><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>
